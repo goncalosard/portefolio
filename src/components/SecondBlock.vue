@@ -1,9 +1,9 @@
 <script lang="ts"></script>
 
 <template>
-  <div class="sizing">
+  <div ref="tecs" class="sizing">
     <div>
-      <h1>Technologies and Languages</h1>
+      <h1 class="title">Technologies and Languages</h1>
 
       <div class="flex iconsbox">
         <div class="icons-direction">
@@ -137,6 +137,9 @@
 </template>
 
 <style scoped>
+.title {
+  font-size: 70px;
+}
 .sizing {
   height: 50vh;
   margin-left: 200px;

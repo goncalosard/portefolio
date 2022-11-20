@@ -1,9 +1,13 @@
+<script lang="ts">
+export {};
+</script>
+
 <template>
   <div class="navbar">
     <a class="animationBounce bounce" href="" target="">Main</a>
     <a class="animationBounce bounce" href="" target="">About</a>
     <a class="animationBounce bounce" href="" target="">Skills</a>
-    <a class="animationBounce bounce" href="" target="">Fun</a>
+    <a @click="" class="animationBounce bounce" href="" target="">Fun</a>
   </div>
 </template>
 
