@@ -1,0 +1,9 @@
+@import './base.css';
+
+#app {
+  width: 100%;
+  background-image: linear-gradient(to right, #f9f9ce, #f8f8d2, #f7f7d5, #f6f6d9, #f5f5dc);
+  font-weight: normal;
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  /* font-family: fantasy; */
+}
