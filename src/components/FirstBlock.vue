@@ -5,14 +5,6 @@ function skillsScroll() {
   const element: any = document.getElementById("skills");
   element?.scrollIntoView({ behavior: "smooth" });
 }
-
-// const anime = require('animejs');
-// anime({
-//   targets: "div",
-//   opacity: [0, 1],
-//   easing: "linear",
-//   duration: 1000,
-// });
 </script>
 
 <template>
@@ -26,7 +18,20 @@ function skillsScroll() {
         width="247"
         height="328"
       />
-      <div class="description">This here is going to be a description</div>
+      <div class="description">
+        <strong class="bold">Welcome</strong> to my page, my name is<strong
+          class="bold"
+        >
+          Gonçalo Ferreira</strong
+        >. I'm 26 years old, live in Portugal and I have a degree in
+        <strong class="bold">Computer Science</strong> and at the moment I have
+        been working as a frontend developer at Siemens. At the moment, in my
+        journey as a <strong class="bold">frontend developer</strong> I have
+        worked with 3 frameworks that are
+        <strong class="bold">React, Angular and Vue</strong>. I work on a public
+        project that is a open source design system and I also maintain a web
+        application that I have developed in the past.
+      </div>
     </div>
     <div class="scrollIcon">
       <section id="section10" class="demo">
@@ -151,6 +156,7 @@ function skillsScroll() {
   margin-left: 50px;
   height: 200px;
   font-size: 20px;
+  text-align: justify;
 }
 
 .infoPhoto {
@@ -168,5 +174,9 @@ function skillsScroll() {
 .fadeDescription {
   animation: fadeIn;
   animation-duration: 2s;
+}
+
+.bold {
+  font-weight: bold;
 }
 </style>

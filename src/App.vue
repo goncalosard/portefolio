@@ -1,6 +1,15 @@
 <script setup lang="ts">
 import HomeView from "./views/HomeView.vue";
 import Footer from "../src/components/Footer.vue";
+// import anime from "animejs";
+
+// anime({
+//   targets: "div",
+//   opacity: [0, 1],
+//   easing: "linear",
+//   duration: 1000,
+//   delay: 50,
+// });
 </script>
 
 <template>

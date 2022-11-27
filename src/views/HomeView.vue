@@ -1,9 +1,18 @@
 <script setup lang="ts">
+import { reactive, ref, watch } from "vue";
 import Navbar from "../components/Navbar.vue";
 import FirstBlock from "../components/FirstBlock.vue";
 import SecondBlock from "../components/SecondBlock.vue";
 import ThirdBlock from "../components/ThirdBlock.vue";
 import Contact from "../components/Contact.vue";
+
+var question = ref(document.body.scrollTop);
+const obj = reactive({ count: 0 });
+
+function scrollPercentage() {
+  question = ref(document.body.scrollTop);
+  console.log(document.body.scrollTop);
+}
 </script>
 
 <template>
