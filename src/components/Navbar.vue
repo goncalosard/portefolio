@@ -1,13 +1,28 @@
-<script lang="ts">
-export {};
+<script setup lang="ts">
+import { ref } from "vue";
+
+function skillsScroll() {
+  const element: any = document.getElementById("skills");
+  element?.scrollIntoView({ behavior: "smooth" });
+}
+function projectsScroll() {
+  const element: any = document.getElementById("projects");
+  element?.scrollIntoView({ behavior: "smooth" });
+}
+
+function homeScroll() {
+  const element: any = document.getElementById("home");
+  element?.scrollIntoView({ behavior: "smooth" });
+}
 </script>
 
 <template>
   <div class="navbar">
-    <a class="animationBounce bounce" href="" target="">Main</a>
-    <a class="animationBounce bounce" href="" target="">About</a>
-    <a class="animationBounce bounce" href="" target="">Skills</a>
-    <a @click="" class="animationBounce bounce" href="" target="">Fun</a>
+    <a @click="homeScroll" class="animationBounce bounce">Home</a>
+    <a @click="skillsScroll" class="animationBounce bounce">Skills</a>
+    <a @click="projectsScroll" class="animationBounce bounce">Projects</a>
+    <a class="animationBounce bounce">Hobbies</a>
+    <a class="animationBounce bounce">Contact</a>
   </div>
 </template>
 
@@ -18,6 +33,8 @@ export {};
   color: black;
   display: flex;
   justify-content: space-between;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 /* unvisited link */

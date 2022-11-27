@@ -3,7 +3,7 @@ import HomeView from "./views/HomeView.vue";
 </script>
 
 <template>
-  <div class="homeview">
+  <div id="home" class="homeview">
     <HomeView />
   </div>
   <div></div>

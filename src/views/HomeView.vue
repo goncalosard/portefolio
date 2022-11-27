@@ -2,6 +2,7 @@
 import Navbar from "../components/Navbar.vue";
 import FirstBlock from "../components/FirstBlock.vue";
 import SecondBlock from "../components/SecondBlock.vue";
+import ThirdBlock from "../components/ThirdBlock.vue";
 </script>
 
 <template>
@@ -9,14 +10,17 @@ import SecondBlock from "../components/SecondBlock.vue";
     <div class="navbar">
       <Navbar />
     </div>
-    
+
     <FirstBlock />
   </div>
 
-  <div class="secondSector">
+  <div id="skills" class="secondSector">
     <SecondBlock />
   </div>
 
+  <div class="thirdSector">
+    <ThirdBlock />
+  </div>
 </template>
 
 <style scoped>
@@ -33,8 +37,24 @@ import SecondBlock from "../components/SecondBlock.vue";
 }
 
 .secondSector {
- height: 100vh;
- width: 100%;
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+    0deg,
+    rgba(255, 255, 189, 1) 0%,
+    rgba(249, 249, 206, 1) 65%,
+    rgba(249, 249, 206, 1) 100%
+  );
 }
 
+.thirdSector {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 189, 1) 0%,
+    rgba(249, 249, 206, 1) 65%,
+    rgba(249, 249, 206, 1) 100%
+  );
+}
 </style>
