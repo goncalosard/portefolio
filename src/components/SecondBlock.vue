@@ -228,7 +228,6 @@ import Pill from "../components/Pill.vue";
 
 .greyicons:hover {
   -webkit-filter: grayscale(0);
-  margin-right: 5px;
 }
 
 .hide {
@@ -251,5 +250,6 @@ import Pill from "../components/Pill.vue";
 
 .names {
   cursor: default;
+  margin-left: 5px;
 }
 </style>

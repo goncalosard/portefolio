@@ -3,6 +3,9 @@ import Navbar from "../components/Navbar.vue";
 import FirstBlock from "../components/FirstBlock.vue";
 import SecondBlock from "../components/SecondBlock.vue";
 import ThirdBlock from "../components/ThirdBlock.vue";
+import Contact from "../components/Contact.vue";
+
+import Footer from "../components/Footer.vue";
 </script>
 
 <template>
@@ -21,6 +24,12 @@ import ThirdBlock from "../components/ThirdBlock.vue";
   <div class="thirdSector">
     <ThirdBlock />
   </div>
+
+  <div class="contact">
+    <Contact />
+  </div>
+
+  <Footer />
 </template>
 
 <style scoped>
@@ -56,5 +65,10 @@ import ThirdBlock from "../components/ThirdBlock.vue";
     rgba(249, 249, 206, 1) 65%,
     rgba(249, 249, 206, 1) 100%
   );
+}
+
+.contact {
+  height: 80vh;
+  width: 100%;
 }
 </style>

@@ -1,11 +1,9 @@
 <script setup lang="ts">
 import Card from "../components/Cards.vue";
-
-const iXLogo = "";
 </script>
 
 <template>
-  <div ref="tecs" class="sizing">
+  <div class="sizing">
     <div class="centerBlock">
       <h1 id="projects" class="title">Projects</h1>
       <hr class="line" />
