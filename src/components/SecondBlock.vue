@@ -24,13 +24,9 @@ import Pill from "../components/Pill.vue";
           <div class="">
             <Pill
               ><template v-slot:content>
-                <div class="flex">
-                  <v-icon
-                    class="greyicons showName"
-                    name="vi-file-type-vue"
-                    scale="3"
-                  />
-                  <div class="showName hide">Vue</div>
+                <div class="flex showName greyicons">
+                  <v-icon name="vi-file-type-vue" scale="3" />
+                  <div class="hide names">Vue</div>
                 </div></template
               >
             </Pill>
@@ -38,76 +34,51 @@ import Pill from "../components/Pill.vue";
 
           <Pill>
             <template v-slot:content>
-              <div class="flex">
-                <v-icon
-                  class="greyicons showName"
-                  name="vi-file-type-angular"
-                  scale="3"
-                />
-                <div class="hide">Angular</div>
+              <div class="flex showName greyicons">
+                <v-icon name="vi-file-type-angular" scale="3" />
+                <div class="hide names">Angular</div>
               </div>
             </template>
           </Pill>
           <Pill>
             <template v-slot:content>
-              <div class="flex">
-                <v-icon
-                  class="greyicons showName"
-                  name="vi-file-type-reactjs"
-                  scale="3"
-                />
-                <div class="hide">React</div>
+              <div class="flex showName greyicons">
+                <v-icon name="vi-file-type-reactjs" scale="3" />
+                <div class="hide names">React</div>
               </div>
             </template>
           </Pill>
           <Pill>
             <template v-slot:content>
-              <div class="flex">
-                <v-icon
-                  class="greyicons showName"
-                  name="vi-file-type-stencil"
-                  scale="3"
-                />
-                <div class="hide">Stencil</div>
+              <div class="flex showName greyicons">
+                <v-icon name="vi-file-type-stencil" scale="3" />
+                <div class="hide names">Stencil</div>
               </div>
             </template>
           </Pill>
 
           <Pill>
             <template v-slot:content>
-              <div class="flex">
-                <v-icon
-                  class="greyicons showName"
-                  color="yellow"
-                  name="io-logo-javascript"
-                  scale="3"
-                />
-                <div class="hide">JavaScript</div>
+              <div class="flex showName greyicons">
+                <v-icon color="yellow" name="io-logo-javascript" scale="3" />
+                <div class="hide names">JavaScript</div>
               </div>
             </template>
           </Pill>
 
           <Pill>
             <template v-slot:content>
-              <div class="flex">
-                <v-icon
-                  class="greyicons showName"
-                  name="vi-file-type-typescript-official"
-                  scale="3"
-                />
-                <div class="hide">TypeScript</div>
+              <div class="flex showName greyicons">
+                <v-icon name="vi-file-type-typescript-official" scale="3" />
+                <div class="hide names">TypeScript</div>
               </div>
             </template>
           </Pill>
           <Pill>
             <template v-slot:content>
-              <div class="flex">
-                <v-icon
-                  class="greyicons showName"
-                  name="vi-file-type-html"
-                  scale="3"
-                />
-                <div class="hide">HTML</div>
+              <div class="flex showName greyicons">
+                <v-icon name="vi-file-type-html" scale="3" />
+                <div class="hide names">HTML</div>
               </div>
             </template>
           </Pill>
@@ -116,53 +87,36 @@ import Pill from "../components/Pill.vue";
         <div class="icons-row">
           <Pill>
             <template v-slot:content>
-              <div class="flex">
-                <v-icon
-                  class="greyicons showName"
-                  name="vi-file-type-css"
-                  scale="3"
-                />
-                <div class="hide">CSS</div>
+              <div class="flex showName greyicons">
+                <v-icon name="vi-file-type-css" scale="3" />
+                <div class="hide names">CSS</div>
               </div>
             </template>
           </Pill>
 
           <Pill>
             <template v-slot:content>
-              <div class="flex">
-                <v-icon
-                  class="greyicons showName"
-                  name="vi-file-type-eslint"
-                  scale="3"
-                />
-                <div class="hide">ESLint</div>
+              <div class="flex showName greyicons">
+                <v-icon name="vi-file-type-eslint" scale="3" />
+                <div class="hide names">ESLint</div>
               </div>
             </template>
           </Pill>
 
           <Pill>
             <template v-slot:content>
-              <div class="flex">
-                <v-icon
-                  class="greyicons showName"
-                  name="si-cypress"
-                  scale="3"
-                />
-                <div class="hide">Cypress</div>
+              <div class="flex showName greyicons">
+                <v-icon name="si-cypress" scale="3" />
+                <div class="hide names">Cypress</div>
               </div>
             </template>
           </Pill>
 
           <Pill>
             <template v-slot:content>
-              <div class="flex">
-                <v-icon
-                  class="greyicons showName"
-                  color="teal"
-                  name="si-i18next"
-                  scale="3"
-                />
-                <div class="hide">i18Next</div>
+              <div class="flex showName greyicons">
+                <v-icon color="teal" name="si-i18next" scale="3" />
+                <div class="hide names">i18Next</div>
               </div>
             </template>
           </Pill>
@@ -170,49 +124,36 @@ import Pill from "../components/Pill.vue";
           <!-- <v-icon class="greyicons" name="vi-file-type-yarn" scale="3" /> -->
           <Pill>
             <template v-slot:content>
-              <div class="flex">
-                <v-icon
-                  class="greyicons showName"
-                  name="co-webcomponents-org"
-                  scale="3"
-                />
-                <div class="hide">Web Components</div>
+              <div class="flex greyicons showName">
+                <v-icon name="co-webcomponents-org" scale="3" />
+                <div class="hide names">Web Components</div>
               </div>
             </template>
           </Pill>
 
           <Pill>
             <template v-slot:content>
-              <div class="flex">
-                <v-icon
-                  class="greyicons showName"
-                  color="purple"
-                  name="co-bootstrap"
-                  scale="3"
-                />
-                <div class="hide">Bootstrap</div>
+              <div class="flex greyicons showName">
+                <v-icon color="purple" name="co-bootstrap" scale="3" />
+                <div class="hide names">Bootstrap</div>
               </div>
             </template>
           </Pill>
 
           <Pill>
             <template v-slot:content>
-              <div class="flex">
-                <v-icon class="greyicons showName" name="si-json" scale="3" />
-                <div class="hide">JSON</div>
+              <div class="flex greyicons showName">
+                <v-icon name="si-json" scale="3" />
+                <div class="hide names">JSON</div>
               </div>
             </template>
           </Pill>
 
           <Pill>
             <template v-slot:content>
-              <div class="flex">
-                <v-icon
-                  class="greyicons showName"
-                  name="vi-file-type-sass"
-                  scale="3"
-                />
-                <div class="hide">Sass</div>
+              <div class="flex greyicons showName">
+                <v-icon name="vi-file-type-sass" scale="3" />
+                <div class="hide names">Sass</div>
               </div>
             </template>
           </Pill>
@@ -294,8 +235,11 @@ import Pill from "../components/Pill.vue";
   display: none;
 }
 
-.showName:hover + .hide {
-  display: block;
+.showName:hover {
+  .hide {
+    display: block;
+  }
+
   color: var(--color-text);
   font-weight: bold;
   display: flex;
@@ -303,5 +247,9 @@ import Pill from "../components/Pill.vue";
   align-items: center;
   font-size: 20px;
   height: 57.59px;
+}
+
+.names {
+  cursor: default;
 }
 </style>
