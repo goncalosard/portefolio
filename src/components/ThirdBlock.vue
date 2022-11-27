@@ -5,7 +5,7 @@ import Card from "../components/Cards.vue";
 <template>
   <div class="sizing">
     <div class="centerBlock">
-      <h1 id="projects" class="title">Projects</h1>
+      <h1 class="title">Projects</h1>
       <hr class="line" />
     </div>
     <div class="row">
@@ -114,6 +114,7 @@ import Card from "../components/Cards.vue";
   /* height: 50vh; */
   margin-left: 200px;
   margin-right: 200px;
+  margin-top: 100px;
 }
 
 .row {

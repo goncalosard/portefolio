@@ -251,5 +251,6 @@ import Pill from "../components/Pill.vue";
 .names {
   cursor: default;
   margin-left: 5px;
+  font-weight: 500;
 }
 </style>

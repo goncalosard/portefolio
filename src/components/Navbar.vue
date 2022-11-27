@@ -5,6 +5,7 @@ function skillsScroll() {
   const element: any = document.getElementById("skills");
   element?.scrollIntoView({ behavior: "smooth" });
 }
+
 function projectsScroll() {
   const element: any = document.getElementById("projects");
   element?.scrollIntoView({ behavior: "smooth" });
@@ -12,6 +13,11 @@ function projectsScroll() {
 
 function homeScroll() {
   const element: any = document.getElementById("home");
+  element?.scrollIntoView({ behavior: "smooth" });
+}
+
+function contactScroll() {
+  const element: any = document.getElementById("contact");
   element?.scrollIntoView({ behavior: "smooth" });
 }
 </script>
@@ -22,7 +28,7 @@ function homeScroll() {
     <a @click="skillsScroll" class="animationBounce bounce">Skills</a>
     <a @click="projectsScroll" class="animationBounce bounce">Projects</a>
     <a class="animationBounce bounce">Hobbies</a>
-    <a class="animationBounce bounce">Contact</a>
+    <a @click="contactScroll" class="animationBounce bounce">Contact</a>
   </div>
 </template>
 

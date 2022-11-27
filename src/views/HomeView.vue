@@ -21,11 +21,11 @@ import Footer from "../components/Footer.vue";
     <SecondBlock />
   </div>
 
-  <div class="thirdSector">
+  <div id="projects" class="thirdSector">
     <ThirdBlock />
   </div>
 
-  <div class="contact">
+  <div id="contact" class="contact">
     <Contact />
   </div>
 
@@ -68,7 +68,6 @@ import Footer from "../components/Footer.vue";
 }
 
 .contact {
-  height: 80vh;
   width: 100%;
 }
 </style>
