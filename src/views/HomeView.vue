@@ -4,8 +4,6 @@ import FirstBlock from "../components/FirstBlock.vue";
 import SecondBlock from "../components/SecondBlock.vue";
 import ThirdBlock from "../components/ThirdBlock.vue";
 import Contact from "../components/Contact.vue";
-
-import Footer from "../components/Footer.vue";
 </script>
 
 <template>
@@ -54,6 +52,7 @@ import Footer from "../components/Footer.vue";
 
 .thirdSector {
   width: 100%;
+
   /* background-image: linear-gradient(
     180deg,
     rgba(255, 255, 189, 1) 0%,

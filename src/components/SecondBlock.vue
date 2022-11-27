@@ -1,5 +1,9 @@
 <script setup lang="ts">
 import Pill from "../components/Pill.vue";
+import "animate.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 </script>
 
 <template>
@@ -20,17 +24,19 @@ import Pill from "../components/Pill.vue";
       </div>
 
       <div class="flex iconsbox icons-column">
-        <div class="icons-row">
-          <div class="">
-            <Pill
-              ><template v-slot:content>
-                <div class="flex showName greyicons">
-                  <v-icon name="vi-file-type-vue" scale="3" />
-                  <div class="hide names">Vue</div>
-                </div></template
-              >
-            </Pill>
-          </div>
+        <div
+          class="icons-row animation"
+          data-aos="slide-right"
+          data-aos-once="true"
+        >
+          <Pill
+            ><template v-slot:content>
+              <div class="flex showName greyicons">
+                <v-icon name="vi-file-type-vue" scale="3" />
+                <div class="hide names">Vue</div>
+              </div></template
+            >
+          </Pill>
 
           <Pill>
             <template v-slot:content>
@@ -84,7 +90,7 @@ import Pill from "../components/Pill.vue";
           </Pill>
         </div>
 
-        <div class="icons-row">
+        <div class="icons-row" data-aos="slide-left" data-aos-once="true">
           <Pill>
             <template v-slot:content>
               <div class="flex showName greyicons">
@@ -241,7 +247,8 @@ import Pill from "../components/Pill.vue";
   .hide {
     display: block;
   }
-
+  // animation: headShake;
+  // animation-duration: 1s;
   color: var(--color-text);
   font-weight: bold;
   display: flex;

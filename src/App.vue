@@ -8,11 +8,11 @@ import Footer from "../src/components/Footer.vue";
     <HomeView />
   </div>
   <Footer />
-  <div></div>
 </template>
 
 <style>
 .homeview {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;

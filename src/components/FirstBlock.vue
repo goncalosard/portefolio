@@ -1,15 +1,25 @@
 <script setup lang="ts">
+import anime from "animejs";
+import "animate.css";
 function skillsScroll() {
   const element: any = document.getElementById("skills");
   element?.scrollIntoView({ behavior: "smooth" });
 }
+
+// const anime = require('animejs');
+// anime({
+//   targets: "div",
+//   opacity: [0, 1],
+//   easing: "linear",
+//   duration: 1000,
+// });
 </script>
 
 <template>
   <div class="card">
-    <h1 class="title">My name is Gonçalo.</h1>
-    <h1 class="sub-title hover-1">I'm a Frontend Developer.</h1>
-    <div class="block">
+    <h1 class="title fadeTitle">My name is Gonçalo.</h1>
+    <h1 class="sub-title hover-1 fadeTitle">I'm a Frontend Developer.</h1>
+    <div class="block fadeDescription">
       <img
         class="photoLogo"
         src="../assets/photo.jpg"
@@ -121,34 +131,6 @@ function skillsScroll() {
   cursor: initial;
 }
 
-.hover-1 {
-  --c: var(--color-text); /* the color  */
-  --h: 1.2em; /* the height */
-
-  line-height: var(--h);
-  background: linear-gradient(var(--c) 0 0) no-repeat calc(200% - var(--_p, 0%))
-    100%/200% var(--_p, 0.08em);
-  color: #0000;
-  overflow: hidden;
-  text-shadow: 0 calc(-1 * var(--_t, 0em)) var(--c),
-    0 calc(var(--h) - var(--_t, 0em)) #fff;
-  transition: 0.3s var(--_s, 0s),
-    background-position 0.3s calc(0.3s - var(--_s, 0s));
-}
-.hover-1:hover {
-  --c: burlywood;
-  --_t: var(--h);
-  --_p: 100%;
-  --_s: 0.3s;
-}
-
-h1 {
-  font-family: system-ui, sans-serif;
-  font-size: 3rem;
-  margin: 0;
-  cursor: pointer;
-  padding: 0 0.1em;
-}
 .card {
   width: 100%;
   padding-bottom: 150px;
@@ -179,10 +161,12 @@ h1 {
   font-size: 20px;
 }
 
-.country {
-  display: flex;
+.fadeTitle {
+  animation: fadeIn;
+  animation-duration: 2s;
 }
-.PTicon {
-  margin-left: 5px;
+.fadeDescription {
+  animation: fadeIn;
+  animation-duration: 2s;
 }
 </style>
