@@ -191,10 +191,13 @@ import Pill from "../components/Pill.vue";
   border: 2px brown solid;
 }
 .sizing {
-  height: 50vh;
-  margin-left: 200px;
-  margin-right: 200px;
-  margin-top: 100px;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 300px;
+  // height: 50vh;
+  // margin-left: 200px;
+  // margin-right: 200px;
+  // margin-top: 100px;
 }
 
 .flex {

@@ -9,7 +9,6 @@ import { FaFlag, RiZhihuFill, ViFileTypeVue, ViFileTypeAngular, ViFileTypeReactj
 import "./assets/main.css";
 
 
-
 const app = createApp(App);
 
 addIcons(FaFlag, RiZhihuFill, ViFileTypeVue, ViFileTypeAngular, ViFileTypeReactjs, ViFileTypeStencil, IoLogoJavascript, ViFileTypeTypescriptOfficial, ViFileTypeHtml, 
@@ -17,5 +16,6 @@ addIcons(FaFlag, RiZhihuFill, ViFileTypeVue, ViFileTypeAngular, ViFileTypeReactj
 app.component("v-icon", OhVueIcon);
 
 app.use(router);
+
 
 app.mount("#app");

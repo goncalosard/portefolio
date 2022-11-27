@@ -99,6 +99,7 @@ import Card from "../components/Cards.vue";
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 70px;
 }
 
 .line {
@@ -111,14 +112,24 @@ import Card from "../components/Cards.vue";
   z-index: 0;
 }
 .sizing {
-  /* height: 50vh; */
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  /* height: 50vh;
   margin-left: 200px;
   margin-right: 200px;
-  margin-top: 100px;
+  margin-top: 100px; */
 }
 
 .row {
   display: flex;
-  margin-top: 70px;
+}
+
+@media (max-width: 1700px) {
+  .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 </style>

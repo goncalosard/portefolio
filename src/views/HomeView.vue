@@ -28,13 +28,10 @@ import Footer from "../components/Footer.vue";
   <div id="contact" class="contact">
     <Contact />
   </div>
-
-  <Footer />
 </template>
 
 <style scoped>
 .firstSector {
-  height: 100vh;
   width: 100%;
 }
 
@@ -46,25 +43,23 @@ import Footer from "../components/Footer.vue";
 }
 
 .secondSector {
-  height: 100vh;
   width: 100%;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     0deg,
     rgba(255, 255, 189, 1) 0%,
     rgba(249, 249, 206, 1) 65%,
     rgba(249, 249, 206, 1) 100%
-  );
+  ); */
 }
 
 .thirdSector {
-  height: 100vh;
   width: 100%;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     180deg,
     rgba(255, 255, 189, 1) 0%,
     rgba(249, 249, 206, 1) 65%,
     rgba(249, 249, 206, 1) 100%
-  );
+  ); */
 }
 
 .contact {

@@ -7,7 +7,7 @@
         <slot name="img"></slot>
       </div>
       <div class="course-info">
-        <h1><slot name="title"></slot></h1>
+        <h1 class="title"><slot name="title"></slot></h1>
         <h3><slot name="description"></slot></h3>
       </div>
     </div>
@@ -17,6 +17,10 @@
 <style scoped>
 * {
   box-sizing: border-box;
+}
+
+.title {
+  font-weight: 500;
 }
 
 body {

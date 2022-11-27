@@ -18,18 +18,17 @@ function skillsScroll() {
       />
       <div class="description">This here is going to be a description</div>
     </div>
-  </div>
-  <div class="scrollIcon">
-    <section id="section10" class="demo">
-      <a @click="skillsScroll"><span></span></a>
-    </section>
+    <div class="scrollIcon">
+      <section id="section10" class="demo">
+        <a @click="skillsScroll"><span></span></a>
+      </section>
+    </div>
   </div>
 </template>
 
 <style scoped>
 .scrollIcon {
-  margin-left: 200px;
-  margin-right: 200px;
+  padding-top: 50px;
 }
 .demo a {
   cursor: pointer;
@@ -151,8 +150,8 @@ h1 {
   padding: 0 0.1em;
 }
 .card {
-  margin-left: 200px;
-  margin-right: 200px;
+  width: 100%;
+  padding-bottom: 150px;
 }
 .block {
   margin-top: 100px;
