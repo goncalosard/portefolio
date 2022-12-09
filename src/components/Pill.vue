@@ -17,6 +17,12 @@
   margin-right: 40px;
   /* min-width: 80px; */
 }
+
+@media (max-width: 955px) {
+  .pill {
+    margin-right: 10px;
+  }
+}
 .f6 {
   font-size: 0.875rem;
 }

@@ -50,7 +50,10 @@ AOS.init();
             </svg>
           </template>
           <template v-slot:title> Siemens iX </template>
-          <template v-slot:description> Description </template>
+          <template v-slot:description>
+            Open Source Design System where i develope new components/features,
+            do debugging and also have created the main page.</template
+          >
         </Card>
       </div>
       <div data-aos="fade-left" data-aos-once="true">
@@ -63,8 +66,12 @@ AOS.init();
               height="180"
             />
           </template>
-          <template v-slot:title> Eugenio The Genius of Words </template>
-          <template v-slot:description> Description </template>
+          <template v-slot:title> Eugenio </template>
+          <template v-slot:description>
+            Web system that i co-developed where i worked on the frontend and
+            backend. This system teaches about a software and lets the user
+            download the software. Created with the React and Bootstrap.
+          </template>
         </Card>
       </div>
     </div>
@@ -137,6 +144,7 @@ AOS.init();
 
 .row {
   display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 1700px) {

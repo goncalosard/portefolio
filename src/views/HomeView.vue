@@ -46,7 +46,9 @@ function scrollPercentage() {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 58px;
+  gap: 50px;
+  animation: fadeIn;
+  animation-duration: 2s;
 }
 
 .secondSector {

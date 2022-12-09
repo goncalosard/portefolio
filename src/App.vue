@@ -26,8 +26,15 @@ import Footer from "../src/components/Footer.vue";
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+@media (max-width: 440px) {
+  .homeview {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 body::-webkit-scrollbar {
