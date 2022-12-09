@@ -1,6 +1,5 @@
 #!/usr/bin/env sh
 
-# abort on errors
 set -e
 
 # build
@@ -14,9 +13,9 @@ cd dist
 
 git init
 git add -A
-git commit -m 'deploy'
+git commit -m 'New deployment'
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:goncalosard/portefolio.git main:gh-pages
+git push -f git@github.com:goncalosard/portefolio.git master:gh-pages
 
 cd -

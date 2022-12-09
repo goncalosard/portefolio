@@ -1,6 +1,15 @@
 <script setup lang="ts">
 import HomeView from "./views/HomeView.vue";
 import Footer from "../src/components/Footer.vue";
+// import anime from "animejs";
+
+// anime({
+//   targets: "div",
+//   opacity: [0, 1],
+//   easing: "linear",
+//   duration: 1000,
+//   delay: 50,
+// });
 </script>
 
 <template>
@@ -8,17 +17,24 @@ import Footer from "../src/components/Footer.vue";
     <HomeView />
   </div>
   <Footer />
-  <div></div>
 </template>
 
 <style>
 .homeview {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+@media (max-width: 440px) {
+  .homeview {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 body::-webkit-scrollbar {

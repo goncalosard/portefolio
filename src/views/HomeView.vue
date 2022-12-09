@@ -1,11 +1,18 @@
 <script setup lang="ts">
+import { reactive, ref, watch } from "vue";
 import Navbar from "../components/Navbar.vue";
 import FirstBlock from "../components/FirstBlock.vue";
 import SecondBlock from "../components/SecondBlock.vue";
 import ThirdBlock from "../components/ThirdBlock.vue";
 import Contact from "../components/Contact.vue";
 
-import Footer from "../components/Footer.vue";
+var question = ref(document.body.scrollTop);
+const obj = reactive({ count: 0 });
+
+function scrollPercentage() {
+  question = ref(document.body.scrollTop);
+  console.log(document.body.scrollTop);
+}
 </script>
 
 <template>
@@ -39,7 +46,9 @@ import Footer from "../components/Footer.vue";
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 58px;
+  gap: 50px;
+  animation: fadeIn;
+  animation-duration: 2s;
 }
 
 .secondSector {
@@ -54,6 +63,7 @@ import Footer from "../components/Footer.vue";
 
 .thirdSector {
   width: 100%;
+
   /* background-image: linear-gradient(
     180deg,
     rgba(255, 255, 189, 1) 0%,

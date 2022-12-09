@@ -1,4 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
+</script>
 
 <template>
   <div class="sizing">
@@ -8,19 +12,27 @@
     </div>
 
     <div class="icons">
-      <a href="https://www.linkedin.com/in/goncalosard/" target="_blank">
-        <v-icon
-          class="colorLinkedin"
-          color="brown"
-          name="bi-linkedin"
-          scale="3"
-      /></a>
-      <a href="https://github.com/goncalosard" target="_blank">
-        <v-icon class="colorGithub" color="brown" name="bi-github" scale="3"
-      /></a>
-      <a href="mailto:goncalosard@hotmail.com">
-        <v-icon class="colorEmail" color="brown" name="md-email" scale="3"
-      /></a>
+      <div data-aos="fade" data-aos-once="true" data-aos-delay="50">
+        <a href="https://www.linkedin.com/in/goncalosard/" target="_blank">
+          <v-icon
+            class="colorLinkedin"
+            color="brown"
+            name="bi-linkedin"
+            scale="3"
+        /></a>
+      </div>
+
+      <div data-aos="fade" data-aos-once="true" data-aos-delay="200">
+        <a href="https://github.com/goncalosard" target="_blank">
+          <v-icon class="colorGithub" color="brown" name="bi-github" scale="3"
+        /></a>
+      </div>
+
+      <div data-aos="fade" data-aos-once="true" data-aos-delay="350">
+        <a href="mailto:goncalosard@hotmail.com">
+          <v-icon class="colorEmail" color="brown" name="md-email" scale="3"
+        /></a>
+      </div>
     </div>
   </div>
 </template>

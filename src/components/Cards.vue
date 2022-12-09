@@ -8,7 +8,7 @@
       </div>
       <div class="course-info">
         <h1 class="title"><slot name="title"></slot></h1>
-        <h3><slot name="description"></slot></h3>
+        <h3 class="description"><slot name="description"></slot></h3>
       </div>
     </div>
   </div>
@@ -32,6 +32,10 @@ body {
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
+}
+
+.description {
+  text-align: justify;
 }
 
 .course {

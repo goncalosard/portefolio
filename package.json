@@ -14,13 +14,19 @@
     "watch": "webpack --watch"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
+    "animejs": "^3.2.1",
+    "aos": "^3.0.0-beta.6",
     "oh-vue-icons": "^1.0.0-rc3",
     "vue": "^3.2.41",
+    "vue-animejs": "^2.1.1",
     "vue-router": "^4.1.5"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.4",
-    "@types/node": "^16.11.68",
+    "@types/animejs": "^3.1.6",
+    "@types/aos": "^3.0.4",
+    "@types/node": "^16.18.3",
     "@vitejs/plugin-vue": "^3.1.2",
     "@vitejs/plugin-vue-jsx": "^2.0.1",
     "@vue/eslint-config-prettier": "^7.0.0",

@@ -27,7 +27,7 @@ function contactScroll() {
     <a @click="homeScroll" class="animationBounce bounce">Home</a>
     <a @click="skillsScroll" class="animationBounce bounce">Skills</a>
     <a @click="projectsScroll" class="animationBounce bounce">Projects</a>
-    <a class="animationBounce bounce">Hobbies</a>
+    <!-- <a class="animationBounce bounce">Hobbies</a> -->
     <a @click="contactScroll" class="animationBounce bounce">Contact</a>
   </div>
 </template>

@@ -1,5 +1,9 @@
 <script setup lang="ts">
 import Pill from "../components/Pill.vue";
+import "animate.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 </script>
 
 <template>
@@ -9,28 +13,28 @@ import Pill from "../components/Pill.vue";
         <h1 class="title">Skills</h1>
         <hr class="line" />
         <h2 class="sub-title">
-          Some text about the skills i have and where i used them Some text
-          about the skills i have and where i used them Some text about the
-          skills i have and where i used them Some text about the skills i have
-          and where i used them Some text about the skills i have and where i
-          used them Some text about the skills i have and where i used them Some
-          text about the skills i have and where i used them Some text about the
-          skills i have and where i used them
+          Below you can find my core skills as a frontend developer. In my
+          projects, I program mainly in TypeScript and JavaScript, where I have
+          used frameworks such as Vue, Angular and React. I also have worked
+          with creating Web Components, for that i have used Stencil Js. I'm
+          confotable using CSS & Sass, and also have worked with Bootstrap.
         </h2>
       </div>
 
       <div class="flex iconsbox icons-column">
-        <div class="icons-row">
-          <div class="">
-            <Pill
-              ><template v-slot:content>
-                <div class="flex showName greyicons">
-                  <v-icon name="vi-file-type-vue" scale="3" />
-                  <div class="hide names">Vue</div>
-                </div></template
-              >
-            </Pill>
-          </div>
+        <div
+          class="icons-row animation"
+          data-aos="slide-right"
+          data-aos-once="true"
+        >
+          <Pill
+            ><template v-slot:content>
+              <div class="flex showName greyicons">
+                <v-icon name="vi-file-type-vue" scale="3" />
+                <div class="hide names">Vue</div>
+              </div></template
+            >
+          </Pill>
 
           <Pill>
             <template v-slot:content>
@@ -84,7 +88,7 @@ import Pill from "../components/Pill.vue";
           </Pill>
         </div>
 
-        <div class="icons-row">
+        <div class="icons-row" data-aos="slide-left" data-aos-once="true">
           <Pill>
             <template v-slot:content>
               <div class="flex showName greyicons">
@@ -173,6 +177,37 @@ import Pill from "../components/Pill.vue";
 
 .sub-title {
   margin-top: 50px;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+}
+
+@media (max-width: 1440px) {
+  .sub-title {
+    width: 90%;
+  }
+}
+
+@media (max-width: 440px) {
+  .title {
+    font-size: 60px;
+  }
+
+  .sub-title {
+    font-size: 20px;
+  }
+
+  .icons-row {
+    flex-direction: column !important;
+    justify-content: start !important;
+    width: 30% !important;
+  }
+
+  .icons-column {
+    flex-direction: row !important;
+    justify-content: center;
+  }
 }
 
 .centerBlock {
@@ -193,7 +228,7 @@ import Pill from "../components/Pill.vue";
 .sizing {
   width: 100%;
   padding-top: 100px;
-  padding-bottom: 300px;
+  padding-bottom: 150px;
   // height: 50vh;
   // margin-left: 200px;
   // margin-right: 200px;
@@ -209,7 +244,7 @@ import Pill from "../components/Pill.vue";
 
 .iconsbox {
   margin-top: 80px;
-  margin-left: 20px;
+  // margin-left: 20px;
 }
 
 .icons-row {
@@ -241,7 +276,8 @@ import Pill from "../components/Pill.vue";
   .hide {
     display: block;
   }
-
+  // animation: headShake;
+  // animation-duration: 1s;
   color: var(--color-text);
   font-weight: bold;
   display: flex;
