@@ -62,8 +62,6 @@ AOS.init();
 }
 .sizing {
   height: 100%;
-  margin-left: 200px;
-  margin-right: 200px;
   padding-top: 100px;
   display: flex;
   flex-direction: column;
@@ -87,5 +85,16 @@ AOS.init();
 
 .colorEmail:hover {
   color: darkslategray;
+}
+
+@media (max-width: 440px) {
+  .title {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .line {
+    width: 250px !important;
+  }
 }
 </style>

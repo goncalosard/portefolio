@@ -191,22 +191,27 @@ AOS.init();
 
 @media (max-width: 440px) {
   .title {
-    font-size: 60px;
+    font-size: 50px;
+    line-height: 50px;
   }
 
   .sub-title {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .icons-row {
     flex-direction: column !important;
     justify-content: start !important;
-    width: 30% !important;
+    // width: 30% !important;
   }
 
   .icons-column {
     flex-direction: row !important;
     justify-content: center;
+  }
+
+  .line {
+    width: 160px !important;
   }
 }
 

@@ -46,9 +46,16 @@ function scrollPercentage() {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   gap: 50px;
   animation: fadeIn;
   animation-duration: 2s;
+}
+
+@media (max-width: 403px) {
+  .navbar {
+    gap: 30px !important;
+  }
 }
 
 .secondSector {

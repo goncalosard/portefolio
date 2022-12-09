@@ -195,6 +195,19 @@ function skillsScroll() {
   .sub-title {
     font-size: 55px;
   }
+  .description {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 812px) {
+  .title {
+    font-size: 50px;
+  }
+
+  .sub-title {
+    font-size: 50px;
+  }
 }
 
 @media (max-width: 440px) {

@@ -21,5 +21,8 @@
 .text {
   color: #f9f9ce;
   font-weight: 500;
+  text-align: center;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 </style>

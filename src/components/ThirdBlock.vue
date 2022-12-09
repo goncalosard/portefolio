@@ -136,10 +136,6 @@ AOS.init();
   width: 100%;
   padding-top: 50px;
   padding-bottom: 100px;
-  /* height: 50vh;
-  margin-left: 200px;
-  margin-right: 200px;
-  margin-top: 100px; */
 }
 
 .row {
@@ -152,6 +148,17 @@ AOS.init();
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media (max-width: 440px) {
+  .title {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .line {
+    width: 250px !important;
   }
 }
 </style>
