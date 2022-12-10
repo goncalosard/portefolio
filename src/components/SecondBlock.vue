@@ -173,6 +173,7 @@ AOS.init();
   display: flex;
   justify-content: center;
   line-height: 75px;
+  color: #2c3e50;
 }
 
 .sub-title {
@@ -181,6 +182,7 @@ AOS.init();
   display: flex;
   justify-content: center;
   text-align: justify;
+  color: #2c3e50;
 }
 
 @media (max-width: 1440px) {

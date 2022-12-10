@@ -122,6 +122,7 @@ AOS.init();
   font-size: 70px;
   line-height: 75px;
   z-index: 1;
+  color: #2c3e50;
 }
 
 .centerBlock {

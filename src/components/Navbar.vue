@@ -35,7 +35,7 @@ function contactScroll() {
 .navbar {
   margin-top: 20px;
   width: 250px;
-  color: black;
+  color: #2c3e50;
   display: flex;
   justify-content: space-between;
   font-size: 20px;
@@ -45,12 +45,12 @@ function contactScroll() {
 /* unvisited link */
 a:link {
   text-decoration: none;
-  color: black;
+  color: #2c3e50;
 }
 
 /* visited link */
 a:visited {
-  color: black;
+  color: #2c3e50;
 }
 
 /* mouse over link */

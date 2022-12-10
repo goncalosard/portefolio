@@ -115,6 +115,7 @@ body {
   padding: 20px 30px 30px 30px;
   position: relative;
   width: 100%;
+  color: #2c3e50;
 }
 
 .progress-container {
