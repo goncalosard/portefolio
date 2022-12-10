@@ -5,6 +5,7 @@ import FirstBlock from "../components/FirstBlock.vue";
 import SecondBlock from "../components/SecondBlock.vue";
 import ThirdBlock from "../components/ThirdBlock.vue";
 import Contact from "../components/Contact.vue";
+import ScrollTopButton from "../components/ScrollTopButton.vue";
 
 var question = ref(document.body.scrollTop);
 const obj = reactive({ count: 0 });
@@ -17,7 +18,7 @@ function scrollPercentage() {
 
 <template>
   <div class="firstSector">
-    <div class="navbar">
+    <div id="navbar" class="navbar">
       <Navbar />
     </div>
 
@@ -35,6 +36,8 @@ function scrollPercentage() {
   <div id="contact" class="contact">
     <Contact />
   </div>
+
+  <ScrollTopButton />
 </template>
 
 <style scoped>
@@ -46,13 +49,27 @@ function scrollPercentage() {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   gap: 50px;
   animation: fadeIn;
   animation-duration: 2s;
 }
 
+@media (max-width: 403px) {
+  .navbar {
+    gap: 30px !important;
+  }
+}
+
+@media (max-width: 338px) {
+  .navbar {
+    gap: 20px !important;
+  }
+}
+
 .secondSector {
   width: 100%;
+  margin-right: 10px;
   /* background-image: linear-gradient(
     0deg,
     rgba(255, 255, 189, 1) 0%,

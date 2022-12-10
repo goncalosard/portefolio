@@ -9,6 +9,8 @@
       <div class="course-info">
         <h1 class="title"><slot name="title"></slot></h1>
         <h3 class="description"><slot name="description"></slot></h3>
+
+        <!-- <div class="button"><v-icon name="hi-external-link" scale="2" /></div> -->
       </div>
     </div>
   </div>
@@ -17,6 +19,34 @@
 <style scoped>
 * {
   box-sizing: border-box;
+}
+
+@media (max-width: 715px) {
+  .course {
+    flex-direction: column;
+    width: auto !important;
+    height: auto !important;
+    max-width: 305px !important;
+  }
+  .course-preview {
+    max-width: 350px !important;
+    justify-content: center;
+  }
+
+  .course-preview {
+    min-width: 304px !important;
+  }
+}
+
+.button {
+  position: absolute;
+  top: 190px;
+  left: 380px;
+  border-radius: 70%;
+  cursor: pointer;
+}
+.button:not(:first-child) {
+  margin-top: 10px;
 }
 
 .title {
@@ -47,6 +77,7 @@ body {
   margin: 20px;
   overflow: hidden;
   width: 700px;
+  height: 250px;
 }
 
 .course h6 {
@@ -65,9 +96,9 @@ body {
   background-color: #f5f5dc;
   color: #fff;
   padding: 30px;
-  height: 250px;
-  width: 250px;
+  min-width: 250px;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -81,7 +112,7 @@ body {
 }
 
 .course-info {
-  padding: 30px;
+  padding: 20px 30px 30px 30px;
   position: relative;
   width: 100%;
 }

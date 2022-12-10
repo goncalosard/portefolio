@@ -22,7 +22,7 @@ AOS.init();
               data-name="220920_iX_Logo_transparenz"
               xmlns="http://www.w3.org/2000/svg"
               width="244"
-              height="178"
+              height="180"
               viewBox="0 0 244 178"
             >
               <path d="M0 0h244v178H0z" style="fill: #333353; opacity: 0.9" />
@@ -87,7 +87,11 @@ AOS.init();
             />
           </template>
           <template v-slot:title> Solar Panels </template>
-          <template v-slot:description> Description </template>
+          <template v-slot:description>
+            Web system that i co-developed where i worked on the frontend and
+            backend. This system teaches about a software and lets the user
+            download the software. Created with the React and Bootstrap.
+          </template>
         </Card>
       </div>
       <div data-aos="fade-left" data-aos-once="true">
@@ -101,7 +105,12 @@ AOS.init();
             />
           </template>
           <template v-slot:title> IOT </template>
-          <template v-slot:description> Description </template>
+          <template v-slot:description>
+            Web system that i co-developed where i worked on the frontend and
+            backend. This system teaches about a software and lets the user
+            download the software. Created with the React and
+            Bootstrap.</template
+          >
         </Card>
       </div>
     </div>
@@ -136,10 +145,6 @@ AOS.init();
   width: 100%;
   padding-top: 50px;
   padding-bottom: 100px;
-  /* height: 50vh;
-  margin-left: 200px;
-  margin-right: 200px;
-  margin-top: 100px; */
 }
 
 .row {
@@ -152,6 +157,17 @@ AOS.init();
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media (max-width: 440px) {
+  .title {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .line {
+    width: 250px !important;
   }
 }
 </style>

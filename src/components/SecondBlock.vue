@@ -189,24 +189,37 @@ AOS.init();
   }
 }
 
-@media (max-width: 440px) {
-  .title {
-    font-size: 60px;
-  }
-
+@media (max-width: 1162px) {
   .sub-title {
-    font-size: 20px;
+    font-size: 18px;
   }
+}
 
+@media (max-width: 750px) {
   .icons-row {
     flex-direction: column !important;
     justify-content: start !important;
-    width: 30% !important;
+    // width: 30% !important;
   }
 
   .icons-column {
     flex-direction: row !important;
     justify-content: center;
+  }
+}
+
+@media (max-width: 440px) {
+  .title {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .sub-title {
+    font-size: 18px;
+  }
+
+  .line {
+    width: 160px !important;
   }
 }
 
@@ -248,7 +261,6 @@ AOS.init();
 }
 
 .icons-row {
-  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
