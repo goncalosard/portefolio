@@ -22,7 +22,7 @@ AOS.init();
               data-name="220920_iX_Logo_transparenz"
               xmlns="http://www.w3.org/2000/svg"
               width="244"
-              height="178"
+              height="180"
               viewBox="0 0 244 178"
             >
               <path d="M0 0h244v178H0z" style="fill: #333353; opacity: 0.9" />
@@ -87,7 +87,11 @@ AOS.init();
             />
           </template>
           <template v-slot:title> Solar Panels </template>
-          <template v-slot:description> Description </template>
+          <template v-slot:description>
+            Web system that i co-developed where i worked on the frontend and
+            backend. This system teaches about a software and lets the user
+            download the software. Created with the React and Bootstrap.
+          </template>
         </Card>
       </div>
       <div data-aos="fade-left" data-aos-once="true">
@@ -101,7 +105,12 @@ AOS.init();
             />
           </template>
           <template v-slot:title> IOT </template>
-          <template v-slot:description> Description </template>
+          <template v-slot:description>
+            Web system that i co-developed where i worked on the frontend and
+            backend. This system teaches about a software and lets the user
+            download the software. Created with the React and
+            Bootstrap.</template
+          >
         </Card>
       </div>
     </div>

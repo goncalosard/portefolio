@@ -15,12 +15,7 @@ function skillsScroll() {
     </h1>
     <div class="imageAndDescription">
       <div class="block fadeDescription textColor">
-        <img
-          class="photoLogo"
-          src="../assets/photo.jpg"
-          width="247"
-          height="328"
-        />
+        <img class="photoLogo" src="../assets/photo.jpg" />
         <div class="description">
           <strong class="bold">Welcome</strong> to my page, my name is<strong
             class="bold"
@@ -48,7 +43,7 @@ function skillsScroll() {
 
 <style scoped>
 .scrollIcon {
-  padding-top: 50px;
+  /* padding-bottom: 0px; */
 }
 .demo a {
   cursor: pointer;
@@ -149,10 +144,15 @@ function skillsScroll() {
   padding-bottom: 150px;
 }
 .block {
-  margin-top: 100px;
+  margin-top: 90px;
   width: 80%;
   display: flex;
   align-items: center;
+}
+
+img {
+  width: 247px;
+  height: 328px;
 }
 
 .imageAndDescription {
