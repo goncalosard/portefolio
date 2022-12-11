@@ -18,6 +18,10 @@
   z-index: 4;
 }
 
+.scrollTop:hover {
+  color: rgb(95, 40, 40);
+}
+
 .hidden {
   display: none;
 }

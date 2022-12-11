@@ -60,7 +60,7 @@ a:hover {
 
 /* selected link */
 a:active {
-  color: burlywood;
+  color: rgb(95, 40, 40);
 }
 
 .bounce:hover {

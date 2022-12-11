@@ -16,7 +16,7 @@ AOS.init();
     </div>
     <div class="row">
       <div data-aos="fade-right" data-aos-once="true">
-        <Card>
+        <Card buttonUrl url="https://ix.siemens.io/">
           <template v-slot:img>
             <svg
               data-name="220920_iX_Logo_transparenz"
@@ -57,7 +57,7 @@ AOS.init();
         </Card>
       </div>
       <div data-aos="fade-left" data-aos-once="true">
-        <Card>
+        <Card buttonUrl url="https://eugeniov3.herokuapp.com/">
           <template v-slot:img>
             <img
               class="photoLogo"

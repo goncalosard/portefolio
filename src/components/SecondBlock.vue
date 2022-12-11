@@ -15,9 +15,10 @@ AOS.init();
         <h2 class="sub-title">
           Below you can find my core skills as a frontend developer. In my
           projects, I program mainly in TypeScript and JavaScript, where I have
-          used frameworks such as Vue, Angular and React. I also have worked
-          with creating Web Components, for that i have used Stencil Js. I'm
-          confotable using CSS & Sass, and also have worked with Bootstrap.
+          used frameworks such as Vue, Angular and React. I have also worked
+          with creating Web Components, and for that i have used Stencil Js. I'm
+          comfortabel using CSS & Sass, and also have worked with Bootstrap and
+          Angular Material.
         </h2>
       </div>
 

@@ -1,4 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+defineProps({
+  buttonUrl: Boolean,
+  url: String,
+});
+</script>
 
 <template>
   <div class="courses-container">
@@ -9,8 +14,11 @@
       <div class="course-info">
         <h1 class="title"><slot name="title"></slot></h1>
         <h3 class="description"><slot name="description"></slot></h3>
-
-        <!-- <div class="button"><v-icon name="hi-external-link" scale="2" /></div> -->
+        <div class="button" :class="{ hide: !buttonUrl }">
+          <a :href="url" target="_blank">
+            <v-icon class="iconButton" name="hi-external-link" scale="2"
+          /></a>
+        </div>
       </div>
     </div>
   </div>
@@ -19,6 +27,26 @@
 <style scoped>
 * {
   box-sizing: border-box;
+}
+
+.hide {
+  display: none !important;
+}
+
+a:link {
+  color: brown;
+}
+
+a:visited {
+  color: brown;
+}
+
+a:hover {
+  color: rgb(95, 40, 40);
+}
+
+a:active {
+  color: rgb(95, 40, 40);
 }
 
 @media (max-width: 715px) {
@@ -39,14 +67,13 @@
 }
 
 .button {
-  position: absolute;
-  top: 190px;
-  left: 380px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.iconButton {
   border-radius: 70%;
   cursor: pointer;
-}
-.button:not(:first-child) {
-  margin-top: 10px;
 }
 
 .title {
@@ -66,6 +93,7 @@ body {
 
 .description {
   text-align: justify;
+  height: 65%;
 }
 
 .course {
