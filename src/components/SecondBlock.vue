@@ -64,7 +64,11 @@ AOS.init();
           <Pill>
             <template v-slot:content>
               <div class="flex showName greyicons">
-                <v-icon color="yellow" name="io-logo-javascript" scale="3" />
+                <v-icon
+                  color="rgb(203, 197, 32)"
+                  name="io-logo-javascript"
+                  scale="3"
+                />
                 <div class="hide names">JavaScript</div>
               </div>
             </template>
