@@ -86,11 +86,13 @@ AOS.init();
               height="180"
             />
           </template>
-          <template v-slot:title> Solar Panels </template>
+          <template v-slot:title> Power Invertors </template>
           <template v-slot:description>
-            Web system that i co-developed where i worked on the frontend and
-            backend. This system teaches about a software and lets the user
-            download the software. Created with the React and Bootstrap.
+            Worked on the implementation of features and worked on resolving
+            bugs, for a web system that was meant to be used to display all the
+            data to the user. This data came from invertors located on solar
+            panels. This web system was implemented using Angular and Angular
+            Material.
           </template>
         </Card>
       </div>
@@ -104,12 +106,12 @@ AOS.init();
               height="180"
             />
           </template>
-          <template v-slot:title> IOT </template>
+          <template v-slot:title> System Integration </template>
           <template v-slot:description>
-            Web system that i co-developed where i worked on the frontend and
-            backend. This system teaches about a software and lets the user
-            download the software. Created with the React and
-            Bootstrap.</template
+            Worked on the development of a web system that was used to be
+            integrated on a device. Connecting to the device via Wi-Fi, would
+            let the user be able to configure it using the web system. For this
+            development, the framework Vue was used.</template
           >
         </Card>
       </div>
