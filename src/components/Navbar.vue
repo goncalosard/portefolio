@@ -24,7 +24,7 @@ function contactScroll() {
 
 <template>
   <div class="navbar">
-    <a @click="homeScroll" class="animationBounce bounce">Home</a>
+    <a @click="homeScroll" class="animationBounce bounce">HomeT</a>
     <a @click="skillsScroll" class="animationBounce bounce">Skills</a>
     <a @click="projectsScroll" class="animationBounce bounce">Projects</a>
     <a @click="contactScroll" class="animationBounce bounce">Contact</a>
