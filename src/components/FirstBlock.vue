@@ -176,6 +176,7 @@ img {
 @media (max-width: 1340px) {
   .block {
     flex-direction: column;
+    width: 90% !important;
   }
   .description {
     margin-top: 50px;
