@@ -13,7 +13,7 @@
 .scrollTop {
   position: fixed;
   right: 32px;
-  bottom: 32px;
+  bottom: 52px;
   cursor: pointer;
   z-index: 4;
 }
