@@ -2,19 +2,73 @@
 
 <template>
   <div class="pill f6 link dim br-pill ba bw1 ph3 pv2 mb2 dib black" href="#0">
-    <slot name="content"></slot>
+    <div class="flex greyicons showName">
+      <slot name="image"></slot>
+      
+      <div class="hide">
+        <slot name="name"></slot>
+      </div>
+    </div>
+
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+.flex {
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+  justify-content: center;
+  align-items: center;
+  // width: 100%;
+}
+
+.greyicons {
+  -webkit-filter: grayscale(1);
+}
+
+.greyicons:hover {
+  -webkit-filter: grayscale(0);
+}
+
+.hide {
+    display: none;
+  }
+
+.showName:hover {
+  .hide {
+    display: block;
+  }
+  // animation: headShake;
+  // animation-duration: 1s;
+  transition: all 0.5s ease-out;
+  color: var(--color-text);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  
+  width: fit-content;
+  // height: 57.59px;
+}
+.names {
+  cursor: default;
+  margin-left: 5px;
+  font-weight: 500;
+}
+
+
 .pill {
   width: 300px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-  color: brown;
+  // color: brown;
   display: flex;
   justify-content: center;
   width: fit-content;
   margin-right: 40px;
+  border-color: brown;
+  
   /* min-width: 80px; */
 }
 
@@ -53,4 +107,10 @@
 .br-pill {
   border-radius: 9999px;
 }
+
+// .showName:hover {
+//   background-color: red;
+//   transition: all 0.5s ease-out;
+//   width: fit-content;
+// }
 </style>

@@ -3,9 +3,13 @@
 #app {
   width: 100%;
   /* background-image: linear-gradient(to right, #f9f9ce, #f8f8d2, #f7f7d5, #f6f6d9, #f5f5dc); */
+  /* background-color: #f9f9ce; */
   background-color: #f9f9ce;
+
+  background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #f9f9ce 15px ), repeating-linear-gradient( #f6f66a55, #f6f66a );
   font-weight: normal;
   font-family: "Poppins",Sans-serif;
+  overflow: hidden;
   /* font-family: "europa", sans-serif; */
   /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   /* font-family: fantasy; */

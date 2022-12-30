@@ -28,142 +28,146 @@ AOS.init();
           data-aos="slide-right"
           data-aos-once="true"
         >
-          <Pill
-            ><template v-slot:content>
-              <div class="flex showName greyicons">
+          <Pill>
+            <!-- <div class="flex showName greyicons">
                 <v-icon name="vi-file-type-vue" scale="3" />
                 <div class="hide names">Vue</div>
-              </div></template
-            >
-          </Pill>
-
-          <Pill>
-            <template v-slot:content>
-              <div class="flex showName greyicons">
-                <v-icon name="vi-file-type-angular" scale="3" />
-                <div class="hide names">Angular</div>
-              </div>
+              </div> -->
+            <template v-slot:image>
+              <v-icon name="vi-file-type-vue" scale="3" />
             </template>
-          </Pill>
-          <Pill>
-            <template v-slot:content>
-              <div class="flex showName greyicons">
-                <v-icon name="vi-file-type-reactjs" scale="3" />
-                <div class="hide names">React</div>
-              </div>
-            </template>
-          </Pill>
-          <Pill>
-            <template v-slot:content>
-              <div class="flex showName greyicons">
-                <v-icon name="vi-file-type-stencil" scale="3" />
-                <div class="hide names">Stencil</div>
-              </div>
+            <template v-slot:name>
+              <div>Vue</div>
             </template>
           </Pill>
 
           <Pill>
-            <template v-slot:content>
-              <div class="flex showName greyicons">
-                <v-icon
+            <template v-slot:image>
+              <v-icon name="vi-file-type-angular" scale="3" />
+            </template>
+            <template v-slot:name>
+              <div>Angular</div>
+            </template>
+          </Pill>
+          <Pill>
+            <template v-slot:image>
+              <v-icon name="vi-file-type-reactjs" scale="3" />
+            </template>
+            <template v-slot:name>
+              <div>React</div>
+            </template>
+          </Pill>
+          <Pill>
+            <template v-slot:image>
+              <v-icon name="vi-file-type-stencil" scale="3" />
+            </template>
+            <template v-slot:name>
+              <div>Stencil</div>
+            </template>
+          </Pill>
+
+          <Pill>
+            <template v-slot:image>
+              <v-icon
                   color="rgb(203, 197, 32)"
                   name="io-logo-javascript"
                   scale="3"
                 />
-                <div class="hide names">JavaScript</div>
-              </div>
+            </template>
+            <template v-slot:name>
+              <div>JavaScript</div>
             </template>
           </Pill>
 
           <Pill>
-            <template v-slot:content>
-              <div class="flex showName greyicons">
-                <v-icon name="vi-file-type-typescript-official" scale="3" />
-                <div class="hide names">TypeScript</div>
-              </div>
+            <template v-slot:image>
+              <v-icon name="vi-file-type-typescript-official" scale="3" />
+            </template>
+            <template v-slot:name>
+              <div>TypeScript</div>
             </template>
           </Pill>
           <Pill>
-            <template v-slot:content>
-              <div class="flex showName greyicons">
-                <v-icon name="vi-file-type-html" scale="3" />
-                <div class="hide names">HTML</div>
-              </div>
+            <template v-slot:image>
+              <v-icon name="vi-file-type-html" scale="3" />
+            </template>
+            <template v-slot:name>
+              <div>HTML</div>
             </template>
           </Pill>
         </div>
 
         <div class="icons-row" data-aos="slide-left" data-aos-once="true">
           <Pill>
-            <template v-slot:content>
-              <div class="flex showName greyicons">
-                <v-icon name="vi-file-type-css" scale="3" />
-                <div class="hide names">CSS</div>
-              </div>
+            <template v-slot:image>
+              <v-icon name="vi-file-type-css" scale="3" />
+            </template>
+            <template v-slot:name>
+              <div>CSS</div>
             </template>
           </Pill>
 
           <Pill>
-            <template v-slot:content>
-              <div class="flex showName greyicons">
-                <v-icon name="vi-file-type-eslint" scale="3" />
-                <div class="hide names">ESLint</div>
-              </div>
+            <template v-slot:image>
+              <v-icon name="vi-file-type-eslint" scale="3" />
+            </template>
+            <template v-slot:name>
+              <div>ESLint</div>
             </template>
           </Pill>
 
           <Pill>
-            <template v-slot:content>
-              <div class="flex showName greyicons">
-                <v-icon name="si-cypress" scale="3" />
-                <div class="hide names">Cypress</div>
-              </div>
+            <template v-slot:image>
+              <v-icon name="si-cypress" scale="3" />
+            </template>
+            <template v-slot:name>
+              <div>Cypress</div>
             </template>
           </Pill>
 
           <Pill>
-            <template v-slot:content>
-              <div class="flex showName greyicons">
-                <v-icon color="teal" name="si-i18next" scale="3" />
-                <div class="hide names">i18Next</div>
-              </div>
+            <template v-slot:image>
+              <v-icon color="teal" name="si-i18next" scale="3" />
+            </template>
+            <template v-slot:name>
+              <div>i18Next</div>
             </template>
           </Pill>
 
           <!-- <v-icon class="greyicons" name="vi-file-type-yarn" scale="3" /> -->
           <Pill>
-            <template v-slot:content>
-              <div class="flex greyicons showName">
-                <v-icon name="co-webcomponents-org" scale="3" />
-                <div class="hide names">Web Components</div>
-              </div>
+            <template v-slot:image>
+              <v-icon name="co-webcomponents-org" scale="3" />
+            </template>
+            <template v-slot:name>
+              <div>Web Components</div>
             </template>
           </Pill>
 
           <Pill>
-            <template v-slot:content>
-              <div class="flex greyicons showName">
-                <v-icon color="purple" name="co-bootstrap" scale="3" />
-                <div class="hide names">Bootstrap</div>
-              </div>
+            <template v-slot:image>
+              <v-icon color="purple" name="co-bootstrap" scale="3" />
+            </template>
+            <template v-slot:name>
+              <div>Bootstrap</div>
             </template>
           </Pill>
 
           <Pill>
-            <template v-slot:content>
-              <div class="flex greyicons showName">
-                <v-icon name="si-json" scale="3" />
-                <div class="hide names">JSON</div>
-              </div>
+            <template v-slot:image>
+              <v-icon name="si-json" scale="3" />
+            </template>
+            <template v-slot:name>
+              <div>JSON</div>
             </template>
           </Pill>
 
           <Pill>
-            <template v-slot:content>
-              <div class="flex greyicons showName">
-                <v-icon name="vi-file-type-sass" scale="3" />
-                <div class="hide names">Sass</div>
-              </div>
+            <template v-slot:image>
+              <v-icon name="vi-file-type-sass" scale="3" />
+            </template>
+            <template v-slot:name>
+              <div>Sass</div>
             </template>
           </Pill>
         </div>
@@ -259,7 +263,7 @@ AOS.init();
   display: flex;
   margin-left: 10px;
   margin-right: 10px;
-  width: 100%;
+  // width: 100%;
 }
 
 .iconsbox {
@@ -279,32 +283,27 @@ AOS.init();
   flex-direction: column;
 }
 
-.greyicons {
-  -webkit-filter: grayscale(1);
-}
 
-.greyicons:hover {
-  -webkit-filter: grayscale(0);
-}
 
 .hide {
   display: none;
 }
 
-.showName:hover {
-  .hide {
-    display: block;
-  }
-  // animation: headShake;
-  // animation-duration: 1s;
-  color: var(--color-text);
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  height: 57.59px;
-}
+// .showName:hover {
+//   .hide {
+//     display: block;
+//   }
+//   // animation: headShake;
+//   // animation-duration: 1s;
+//   color: var(--color-text);
+//   font-weight: bold;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   font-size: 20px;
+//   width: fit-content;
+//   // height: 57.59px;
+// }
 
 .names {
   cursor: default;
