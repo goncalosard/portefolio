@@ -11,12 +11,14 @@
     "deploy": "sh deploy.sh",
     "build:dev": "webpack --mode=development",
     "build:prod": "webpack --mode=production --define-process-env-node-env=production",
-    "watch": "webpack --watch"
+    "watch": "webpack --watch",
+    "start": "node server.js"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
     "animejs": "^3.2.1",
     "aos": "^3.0.0-beta.6",
+    "express": "^4.18.2",
     "oh-vue-icons": "^1.0.0-rc3",
     "vue": "^3.2.41",
     "vue-animejs": "^2.1.1",
